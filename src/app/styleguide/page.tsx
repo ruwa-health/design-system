@@ -186,32 +186,92 @@ export default function StyleguidePage() {
             {/* Typography */}
             <Section 
               title="Typography" 
-              description="Consistent text hierarchy and styling"
+              description="Typography system based on Figma design tokens"
             >
-              <ComponentExample label="Headings" className="col-span-full">
+              <ComponentExample label="Display Typography" className="col-span-full">
+                <div className="space-y-6 w-full text-left">
+                  <div className="text-extra-large-title font-bold text-foreground leading-tight">
+                    Extra Large Title
+                    <div className="text-sm font-regular text-muted-foreground mt-1">48px / 3rem - Bold</div>
+                  </div>
+                  <div className="text-large-title font-bold text-foreground leading-tight">
+                    Large Title
+                    <div className="text-sm font-regular text-muted-foreground mt-1">34px / 2.125rem - Bold</div>
+                  </div>
+                </div>
+              </ComponentExample>
+
+              <ComponentExample label="Title Typography" className="col-span-full">
                 <div className="space-y-4 w-full text-left">
-                  <h1 className="text-4xl font-bold text-foreground">Heading 1 - 4xl Bold</h1>
-                  <h2 className="text-3xl font-semibold text-foreground">Heading 2 - 3xl Semibold</h2>
-                  <h3 className="text-2xl font-semibold text-foreground">Heading 3 - 2xl Semibold</h3>
-                  <h4 className="text-xl font-semibold text-foreground">Heading 4 - xl Semibold</h4>
-                  <h5 className="text-lg font-semibold text-foreground">Heading 5 - lg Semibold</h5>
-                  <h6 className="text-base font-semibold text-foreground">Heading 6 - base Semibold</h6>
+                  <div className="text-title-1 font-semibold text-foreground leading-tight">
+                    Title 1
+                    <div className="text-sm font-regular text-muted-foreground mt-1">28px / 1.75rem - Semibold</div>
+                  </div>
+                  <div className="text-title-2 font-semibold text-foreground leading-tight">
+                    Title 2
+                    <div className="text-sm font-regular text-muted-foreground mt-1">24px / 1.5rem - Semibold</div>
+                  </div>
+                  <div className="text-title-3 font-semibold text-foreground leading-tight">
+                    Title 3
+                    <div className="text-sm font-regular text-muted-foreground mt-1">20px / 1.25rem - Semibold</div>
+                  </div>
                 </div>
               </ComponentExample>
 
-              <ComponentExample label="Body Text">
-                <div className="space-y-2 text-left">
-                  <p className="text-base text-foreground">Body Large - Regular</p>
-                  <p className="text-sm text-foreground">Body Small - Regular</p>
-                  <p className="text-xs text-muted-foreground">Caption - Muted</p>
+              <ComponentExample label="Body Typography">
+                <div className="space-y-3 text-left">
+                  <div className="text-body font-regular text-foreground leading-relaxed">
+                    Body Text
+                    <div className="text-sm font-regular text-muted-foreground mt-1">17px / 1.0625rem - Regular</div>
+                  </div>
+                  <div className="text-callout font-regular text-foreground leading-normal">
+                    Callout Text
+                    <div className="text-sm font-regular text-muted-foreground mt-1">16px / 1rem - Regular</div>
+                  </div>
+                  <div className="text-subheadline font-regular text-foreground leading-normal">
+                    Subheadline
+                    <div className="text-sm font-regular text-muted-foreground mt-1">15px / 0.9375rem - Regular</div>
+                  </div>
                 </div>
               </ComponentExample>
 
-              <ComponentExample label="Text Variants">
-                <div className="space-y-2 text-left">
-                  <p className="text-sm font-medium text-foreground">Medium Weight</p>
-                  <p className="text-sm font-semibold text-foreground">Semibold Weight</p>
-                  <p className="text-sm text-muted-foreground">Muted Color</p>
+              <ComponentExample label="Small Typography">
+                <div className="space-y-3 text-left">
+                  <div className="text-footnote font-regular text-foreground leading-normal">
+                    Footnote
+                    <div className="text-sm font-regular text-muted-foreground mt-1">13px / 0.8125rem - Regular</div>
+                  </div>
+                  <div className="text-caption-1 font-regular text-muted-foreground leading-normal">
+                    Caption 1
+                    <div className="text-sm font-regular text-muted-foreground mt-1">12px / 0.75rem - Regular</div>
+                  </div>
+                  <div className="text-caption-2 font-regular text-muted-foreground leading-normal">
+                    Caption 2
+                    <div className="text-sm font-regular text-muted-foreground mt-1">11px / 0.6875rem - Regular</div>
+                  </div>
+                </div>
+              </ComponentExample>
+
+              <ComponentExample label="Font Weights">
+                <div className="space-y-3 text-left">
+                  <div className="text-callout font-regular text-foreground">Regular Weight (400)</div>
+                  <div className="text-callout font-medium text-foreground">Medium Weight (500)</div>
+                  <div className="text-callout font-semibold text-foreground">Semibold Weight (600)</div>
+                  <div className="text-callout font-bold text-foreground">Bold Weight (700)</div>
+                </div>
+              </ComponentExample>
+
+              <ComponentExample label="Line Heights">
+                <div className="space-y-4 text-left">
+                  <div className="text-callout font-regular text-foreground leading-tight">
+                    Tight line height (1.2) - Used for display text and titles
+                  </div>
+                  <div className="text-callout font-regular text-foreground leading-normal">
+                    Normal line height (1.5) - Used for general text content
+                  </div>
+                  <div className="text-callout font-regular text-foreground leading-relaxed">
+                    Relaxed line height (1.6) - Used for body text that needs more breathing room
+                  </div>
                 </div>
               </ComponentExample>
             </Section>
