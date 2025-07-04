@@ -248,4 +248,9 @@ body {
     font: var(--typography-caption-2);
     font-weight: var(--font-weight-regular);
   }
+
+  /* Custom letter spacing for buttons */
+  .tracking-\[-0\.36px\] {
+    letter-spacing: -0.36px;
+  }
 }

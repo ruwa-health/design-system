@@ -5,25 +5,29 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-medium text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-subheadline font-semibold tracking-[-0.36px] ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-bg-accent text-content-on-color hover:bg-bg-accent/90",
-        destructive:
-          "bg-bg-negative text-content-on-color hover:bg-bg-negative/90",
-        outline:
-          "border border-border-primary bg-bg-primary hover:bg-bg-secondary hover:text-fg-primary",
-        secondary:
-          "bg-bg-secondary text-fg-primary hover:bg-bg-tertiary",
-        ghost: "hover:bg-bg-secondary hover:text-fg-primary",
-        link: "text-content-accent underline-offset-4 hover:underline",
+        default: "bg-bg-primary-inverse text-fg-inverse-primary hover:bg-opacity-80 hover:text-fg-inverse-secondary disabled:bg-opacity-48 disabled:text-fg-inverse-tertiary",
+        
+        secondary: "bg-bg-faint text-fg-secondary hover:bg-bg-pale hover:text-fg-primary disabled:bg-bg-faint disabled:text-fg-quarternary",
+        
+        destructive: "bg-bg-negative text-fg-secondary hover:bg-bg-negative hover:text-fg-secondary disabled:bg-bg-faint disabled:text-fg-quarternary",
+        
+        outline: "border border-border-primary bg-bg-faint text-fg-secondary hover:bg-bg-pale hover:text-fg-primary disabled:bg-bg-faint disabled:text-fg-quarternary",
+        
+        ghost: "text-fg-tertiary hover:bg-bg-pale hover:text-fg-primary disabled:bg-bg-faint disabled:text-fg-quarternary",
+        
+        link: "text-fg-secondary hover:text-fg-primary active:text-fg-tertiary disabled:text-fg-quarternary rounded-none",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-medium px-3",
-        lg: "h-11 rounded-medium px-8",
-        icon: "h-10 w-10",
+        default: "h-9 px-5 py-2",
+        sm: "h-7 px-3 py-1",
+        lg: "h-11 px-6 py-[11px]",
+        icon: "h-9 w-9",
+        "icon-sm": "h-7 w-7",
+        "icon-lg": "h-11 w-11",
       },
     },
     defaultVariants: {

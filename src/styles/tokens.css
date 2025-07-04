@@ -144,6 +144,9 @@
   --opacity-64: rgba(255, 255, 255, 0.64);
   --opacity-80: rgba(255, 255, 255, 0.80);
   --opacity-88: rgba(255, 255, 255, 0.88);
+  --opacity-94: rgba(255, 255, 255, 0.94);
+  --opacity-56: rgba(255, 255, 255, 0.56);
+  --opacity-40: rgba(255, 255, 255, 0.40);
 
   --opacity-inverse-0: rgba(0, 0, 0, 0);
   --opacity-inverse-2: rgba(0, 0, 0, 0.02);
@@ -276,6 +279,8 @@
   --fg-inverse-secondary: var(--opacity-inverse-64);
   --fg-inverse-tertiary: var(--opacity-inverse-48);
   --fg-inverse-quaternary: var(--opacity-inverse-24);
+  --fg-inverse-primary-hover: var(--opacity-inverse-64);
+  --fg-inverse-tertiary-disabled: var(--opacity-inverse-48);
   --fg-success: var(--green-50);
   --fg-warning: var(--yellow-40);
   --fg-error: var(--red-60);
