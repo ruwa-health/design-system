@@ -15,7 +15,185 @@ body {
 }
 
 @layer utilities {
-  /* Typography Utility Classes */
+  /* Typography Utility Classes with Weight Variants */
+  
+  /* Extra Large Title */
+  .text-extra-large-title-regular {
+    font: var(--typography-extra-large-title-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-extra-large-title-medium {
+    font: var(--typography-extra-large-title-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-extra-large-title-bold {
+    font: var(--typography-extra-large-title-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Large Title */
+  .text-large-title-regular {
+    font: var(--typography-large-title-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-large-title-medium {
+    font: var(--typography-large-title-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-large-title-bold {
+    font: var(--typography-large-title-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Title 1 */
+  .text-title-1-regular {
+    font: var(--typography-title-1-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-title-1-medium {
+    font: var(--typography-title-1-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-title-1-bold {
+    font: var(--typography-title-1-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Title 2 */
+  .text-title-2-regular {
+    font: var(--typography-title-2-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-title-2-medium {
+    font: var(--typography-title-2-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-title-2-bold {
+    font: var(--typography-title-2-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Title 3 */
+  .text-title-3-regular {
+    font: var(--typography-title-3-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-title-3-medium {
+    font: var(--typography-title-3-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-title-3-bold {
+    font: var(--typography-title-3-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Body */
+  .text-body-regular {
+    font: var(--typography-body-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-body-medium {
+    font: var(--typography-body-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-body-bold {
+    font: var(--typography-body-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Callout */
+  .text-callout-regular {
+    font: var(--typography-callout-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-callout-medium {
+    font: var(--typography-callout-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-callout-bold {
+    font: var(--typography-callout-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Subheadline */
+  .text-subheadline-regular {
+    font: var(--typography-subheadline-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-subheadline-medium {
+    font: var(--typography-subheadline-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-subheadline-bold {
+    font: var(--typography-subheadline-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Footnote */
+  .text-footnote-regular {
+    font: var(--typography-footnote-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-footnote-medium {
+    font: var(--typography-footnote-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-footnote-bold {
+    font: var(--typography-footnote-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Caption 1 */
+  .text-caption-1-regular {
+    font: var(--typography-caption-1-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-caption-1-medium {
+    font: var(--typography-caption-1-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-caption-1-bold {
+    font: var(--typography-caption-1-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Caption 2 */
+  .text-caption-2-regular {
+    font: var(--typography-caption-2-regular);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .text-caption-2-medium {
+    font: var(--typography-caption-2-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .text-caption-2-bold {
+    font: var(--typography-caption-2-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Legacy classes for backwards compatibility */
   .text-extra-large-title {
     font: var(--typography-extra-large-title);
     font-weight: var(--font-weight-bold);
@@ -69,5 +247,10 @@ body {
   .text-caption-2 {
     font: var(--typography-caption-2);
     font-weight: var(--font-weight-regular);
+  }
+
+  /* Custom letter spacing for buttons */
+  .tracking-\[-0\.36px\] {
+    letter-spacing: -0.36px;
   }
 }

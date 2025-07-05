@@ -144,6 +144,9 @@
   --opacity-64: rgba(255, 255, 255, 0.64);
   --opacity-80: rgba(255, 255, 255, 0.80);
   --opacity-88: rgba(255, 255, 255, 0.88);
+  --opacity-94: rgba(255, 255, 255, 0.94);
+  --opacity-56: rgba(255, 255, 255, 0.56);
+  --opacity-40: rgba(255, 255, 255, 0.40);
 
   --opacity-inverse-0: rgba(0, 0, 0, 0);
   --opacity-inverse-2: rgba(0, 0, 0, 0.02);
@@ -195,18 +198,74 @@
   /* Font Families */
   --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  /* Semantic Typography Mapping */
-  --typography-caption-2: var(--font-size-caption-2) / var(--line-height-normal) var(--font-sans);
-  --typography-caption-1: var(--font-size-caption-1) / var(--line-height-normal) var(--font-sans);
-  --typography-footnote: var(--font-size-footnote) / var(--line-height-normal) var(--font-sans);
-  --typography-subheadline: var(--font-size-subheadline) / var(--line-height-normal) var(--font-sans);
-  --typography-callout: var(--font-size-callout) / var(--line-height-normal) var(--font-sans);
-  --typography-body: var(--font-size-body) / var(--line-height-relaxed) var(--font-sans);
-  --typography-title-3: var(--font-size-title-3) / var(--line-height-tight) var(--font-sans);
-  --typography-title-2: var(--font-size-title-2) / var(--line-height-tight) var(--font-sans);
-  --typography-title-1: var(--font-size-title-1) / var(--line-height-tight) var(--font-sans);
-  --typography-large-title: var(--font-size-large-title) / var(--line-height-tight) var(--font-sans);
-  --typography-extra-large-title: var(--font-size-extra-large-title) / var(--line-height-tight) var(--font-sans);
+  /* Semantic Typography Mapping with Weight Variants */
+  /* Extra Large Title */
+  --typography-extra-large-title-regular: var(--font-size-extra-large-title) / var(--line-height-tight) var(--font-sans);
+  --typography-extra-large-title-medium: var(--font-size-extra-large-title) / var(--line-height-tight) var(--font-sans);
+  --typography-extra-large-title-bold: var(--font-size-extra-large-title) / var(--line-height-tight) var(--font-sans);
+
+  /* Large Title */
+  --typography-large-title-regular: var(--font-size-large-title) / var(--line-height-tight) var(--font-sans);
+  --typography-large-title-medium: var(--font-size-large-title) / var(--line-height-tight) var(--font-sans);
+  --typography-large-title-bold: var(--font-size-large-title) / var(--line-height-tight) var(--font-sans);
+
+  /* Title 1 */
+  --typography-title-1-regular: var(--font-size-title-1) / var(--line-height-tight) var(--font-sans);
+  --typography-title-1-medium: var(--font-size-title-1) / var(--line-height-tight) var(--font-sans);
+  --typography-title-1-bold: var(--font-size-title-1) / var(--line-height-tight) var(--font-sans);
+
+  /* Title 2 */
+  --typography-title-2-regular: var(--font-size-title-2) / var(--line-height-tight) var(--font-sans);
+  --typography-title-2-medium: var(--font-size-title-2) / var(--line-height-tight) var(--font-sans);
+  --typography-title-2-bold: var(--font-size-title-2) / var(--line-height-tight) var(--font-sans);
+
+  /* Title 3 */
+  --typography-title-3-regular: var(--font-size-title-3) / var(--line-height-tight) var(--font-sans);
+  --typography-title-3-medium: var(--font-size-title-3) / var(--line-height-tight) var(--font-sans);
+  --typography-title-3-bold: var(--font-size-title-3) / var(--line-height-tight) var(--font-sans);
+
+  /* Body */
+  --typography-body-regular: var(--font-size-body) / var(--line-height-relaxed) var(--font-sans);
+  --typography-body-medium: var(--font-size-body) / var(--line-height-relaxed) var(--font-sans);
+  --typography-body-bold: var(--font-size-body) / var(--line-height-relaxed) var(--font-sans);
+
+  /* Callout */
+  --typography-callout-regular: var(--font-size-callout) / var(--line-height-normal) var(--font-sans);
+  --typography-callout-medium: var(--font-size-callout) / var(--line-height-normal) var(--font-sans);
+  --typography-callout-bold: var(--font-size-callout) / var(--line-height-normal) var(--font-sans);
+
+  /* Subheadline */
+  --typography-subheadline-regular: var(--font-size-subheadline) / var(--line-height-normal) var(--font-sans);
+  --typography-subheadline-medium: var(--font-size-subheadline) / var(--line-height-normal) var(--font-sans);
+  --typography-subheadline-bold: var(--font-size-subheadline) / var(--line-height-normal) var(--font-sans);
+
+  /* Footnote */
+  --typography-footnote-regular: var(--font-size-footnote) / var(--line-height-normal) var(--font-sans);
+  --typography-footnote-medium: var(--font-size-footnote) / var(--line-height-normal) var(--font-sans);
+  --typography-footnote-bold: var(--font-size-footnote) / var(--line-height-normal) var(--font-sans);
+
+  /* Caption 1 */
+  --typography-caption-1-regular: var(--font-size-caption-1) / var(--line-height-normal) var(--font-sans);
+  --typography-caption-1-medium: var(--font-size-caption-1) / var(--line-height-normal) var(--font-sans);
+  --typography-caption-1-bold: var(--font-size-caption-1) / var(--line-height-normal) var(--font-sans);
+
+  /* Caption 2 */
+  --typography-caption-2-regular: var(--font-size-caption-2) / var(--line-height-normal) var(--font-sans);
+  --typography-caption-2-medium: var(--font-size-caption-2) / var(--line-height-normal) var(--font-sans);
+  --typography-caption-2-bold: var(--font-size-caption-2) / var(--line-height-normal) var(--font-sans);
+
+  /* Legacy mappings for backwards compatibility */
+  --typography-caption-2: var(--typography-caption-2-regular);
+  --typography-caption-1: var(--typography-caption-1-regular);
+  --typography-footnote: var(--typography-footnote-regular);
+  --typography-subheadline: var(--typography-subheadline-regular);
+  --typography-callout: var(--typography-callout-regular);
+  --typography-body: var(--typography-body-regular);
+  --typography-title-3: var(--typography-title-3-medium);
+  --typography-title-2: var(--typography-title-2-medium);
+  --typography-title-1: var(--typography-title-1-medium);
+  --typography-large-title: var(--typography-large-title-bold);
+  --typography-extra-large-title: var(--typography-extra-large-title-bold);
 }
 
 /* === DARK MODE (default) === */
@@ -220,6 +279,8 @@
   --fg-inverse-secondary: var(--opacity-inverse-64);
   --fg-inverse-tertiary: var(--opacity-inverse-48);
   --fg-inverse-quaternary: var(--opacity-inverse-24);
+  --fg-inverse-primary-hover: var(--opacity-inverse-64);
+  --fg-inverse-tertiary-disabled: var(--opacity-inverse-48);
   --fg-success: var(--green-50);
   --fg-warning: var(--yellow-40);
   --fg-error: var(--red-60);

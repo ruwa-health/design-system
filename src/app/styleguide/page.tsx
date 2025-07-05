@@ -186,91 +186,191 @@ export default function StyleguidePage() {
             {/* Typography */}
             <Section 
               title="Typography" 
-              description="Typography system based on Figma design tokens"
+              description="Complete typography system with all weight variants"
             >
-              <ComponentExample label="Display Typography" className="col-span-full">
-                <div className="space-y-6 w-full text-left">
-                  <div className="text-extra-large-title font-bold text-foreground leading-tight">
-                    Extra Large Title
-                    <div className="text-sm font-regular text-muted-foreground mt-1">48px / 3rem - Bold</div>
-                  </div>
-                  <div className="text-large-title font-bold text-foreground leading-tight">
-                    Large Title
-                    <div className="text-sm font-regular text-muted-foreground mt-1">34px / 2.125rem - Bold</div>
-                  </div>
-                </div>
-              </ComponentExample>
-
-              <ComponentExample label="Title Typography" className="col-span-full">
+              <ComponentExample label="Extra Large Title (48px)" className="col-span-full">
                 <div className="space-y-4 w-full text-left">
-                  <div className="text-title-1 font-semibold text-foreground leading-tight">
-                    Title 1
-                    <div className="text-sm font-regular text-muted-foreground mt-1">28px / 1.75rem - Semibold</div>
+                  <div className="text-extra-large-title-regular text-foreground">
+                    Extra Large Title Regular
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-extra-large-title-regular</div>
                   </div>
-                  <div className="text-title-2 font-semibold text-foreground leading-tight">
-                    Title 2
-                    <div className="text-sm font-regular text-muted-foreground mt-1">24px / 1.5rem - Semibold</div>
+                  <div className="text-extra-large-title-medium text-foreground">
+                    Extra Large Title Medium
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-extra-large-title-medium</div>
                   </div>
-                  <div className="text-title-3 font-semibold text-foreground leading-tight">
-                    Title 3
-                    <div className="text-sm font-regular text-muted-foreground mt-1">20px / 1.25rem - Semibold</div>
+                  <div className="text-extra-large-title-bold text-foreground">
+                    Extra Large Title Bold
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-extra-large-title-bold</div>
                   </div>
                 </div>
               </ComponentExample>
 
-              <ComponentExample label="Body Typography">
+              <ComponentExample label="Large Title (34px)" className="col-span-full">
+                <div className="space-y-4 w-full text-left">
+                  <div className="text-large-title-regular text-foreground">
+                    Large Title Regular
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-large-title-regular</div>
+                  </div>
+                  <div className="text-large-title-medium text-foreground">
+                    Large Title Medium
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-large-title-medium</div>
+                  </div>
+                  <div className="text-large-title-bold text-foreground">
+                    Large Title Bold
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-large-title-bold</div>
+                  </div>
+                </div>
+              </ComponentExample>
+
+              <ComponentExample label="Title 1 (28px)" className="col-span-full">
+                <div className="space-y-3 w-full text-left">
+                  <div className="text-title-1-regular text-foreground">
+                    Title 1 Regular
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-title-1-regular</div>
+                  </div>
+                  <div className="text-title-1-medium text-foreground">
+                    Title 1 Medium
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-title-1-medium</div>
+                  </div>
+                  <div className="text-title-1-bold text-foreground">
+                    Title 1 Bold
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-title-1-bold</div>
+                  </div>
+                </div>
+              </ComponentExample>
+
+              <ComponentExample label="Title 2 (24px)" className="col-span-full">
+                <div className="space-y-3 w-full text-left">
+                  <div className="text-title-2-regular text-foreground">
+                    Title 2 Regular
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-title-2-regular</div>
+                  </div>
+                  <div className="text-title-2-medium text-foreground">
+                    Title 2 Medium
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-title-2-medium</div>
+                  </div>
+                  <div className="text-title-2-bold text-foreground">
+                    Title 2 Bold
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-title-2-bold</div>
+                  </div>
+                </div>
+              </ComponentExample>
+
+              <ComponentExample label="Title 3 (20px)" className="col-span-full">
+                <div className="space-y-3 w-full text-left">
+                  <div className="text-title-3-regular text-foreground">
+                    Title 3 Regular
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-title-3-regular</div>
+                  </div>
+                  <div className="text-title-3-medium text-foreground">
+                    Title 3 Medium
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-title-3-medium</div>
+                  </div>
+                  <div className="text-title-3-bold text-foreground">
+                    Title 3 Bold
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-title-3-bold</div>
+                  </div>
+                </div>
+              </ComponentExample>
+
+              <ComponentExample label="Body (17px)">
                 <div className="space-y-3 text-left">
-                  <div className="text-body font-regular text-foreground leading-relaxed">
-                    Body Text
-                    <div className="text-sm font-regular text-muted-foreground mt-1">17px / 1.0625rem - Regular</div>
+                  <div className="text-body-regular text-foreground">
+                    Body Regular
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-body-regular</div>
                   </div>
-                  <div className="text-callout font-regular text-foreground leading-normal">
-                    Callout Text
-                    <div className="text-sm font-regular text-muted-foreground mt-1">16px / 1rem - Regular</div>
+                  <div className="text-body-medium text-foreground">
+                    Body Medium
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-body-medium</div>
                   </div>
-                  <div className="text-subheadline font-regular text-foreground leading-normal">
-                    Subheadline
-                    <div className="text-sm font-regular text-muted-foreground mt-1">15px / 0.9375rem - Regular</div>
+                  <div className="text-body-bold text-foreground">
+                    Body Bold
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-body-bold</div>
                   </div>
                 </div>
               </ComponentExample>
 
-              <ComponentExample label="Small Typography">
+              <ComponentExample label="Callout (16px)">
                 <div className="space-y-3 text-left">
-                  <div className="text-footnote font-regular text-foreground leading-normal">
-                    Footnote
-                    <div className="text-sm font-regular text-muted-foreground mt-1">13px / 0.8125rem - Regular</div>
+                  <div className="text-callout-regular text-foreground">
+                    Callout Regular
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-callout-regular</div>
                   </div>
-                  <div className="text-caption-1 font-regular text-muted-foreground leading-normal">
-                    Caption 1
-                    <div className="text-sm font-regular text-muted-foreground mt-1">12px / 0.75rem - Regular</div>
+                  <div className="text-callout-medium text-foreground">
+                    Callout Medium
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-callout-medium</div>
                   </div>
-                  <div className="text-caption-2 font-regular text-muted-foreground leading-normal">
-                    Caption 2
-                    <div className="text-sm font-regular text-muted-foreground mt-1">11px / 0.6875rem - Regular</div>
+                  <div className="text-callout-bold text-foreground">
+                    Callout Bold
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-callout-bold</div>
                   </div>
                 </div>
               </ComponentExample>
 
-              <ComponentExample label="Font Weights">
+              <ComponentExample label="Subheadline (15px)">
                 <div className="space-y-3 text-left">
-                  <div className="text-callout font-regular text-foreground">Regular Weight (400)</div>
-                  <div className="text-callout font-medium text-foreground">Medium Weight (500)</div>
-                  <div className="text-callout font-semibold text-foreground">Semibold Weight (600)</div>
-                  <div className="text-callout font-bold text-foreground">Bold Weight (700)</div>
+                  <div className="text-subheadline-regular text-foreground">
+                    Subheadline Regular
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-subheadline-regular</div>
+                  </div>
+                  <div className="text-subheadline-medium text-foreground">
+                    Subheadline Medium
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-subheadline-medium</div>
+                  </div>
+                  <div className="text-subheadline-bold text-foreground">
+                    Subheadline Bold
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-subheadline-bold</div>
+                  </div>
                 </div>
               </ComponentExample>
 
-              <ComponentExample label="Line Heights">
-                <div className="space-y-4 text-left">
-                  <div className="text-callout font-regular text-foreground leading-tight">
-                    Tight line height (1.2) - Used for display text and titles
+              <ComponentExample label="Footnote (13px)">
+                <div className="space-y-3 text-left">
+                  <div className="text-footnote-regular text-foreground">
+                    Footnote Regular
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-footnote-regular</div>
                   </div>
-                  <div className="text-callout font-regular text-foreground leading-normal">
-                    Normal line height (1.5) - Used for general text content
+                  <div className="text-footnote-medium text-foreground">
+                    Footnote Medium
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-footnote-medium</div>
                   </div>
-                  <div className="text-callout font-regular text-foreground leading-relaxed">
-                    Relaxed line height (1.6) - Used for body text that needs more breathing room
+                  <div className="text-footnote-bold text-foreground">
+                    Footnote Bold
+                    <div className="text-caption-1-regular text-muted-foreground mt-1">text-footnote-bold</div>
+                  </div>
+                </div>
+              </ComponentExample>
+
+              <ComponentExample label="Caption 1 (12px)">
+                <div className="space-y-3 text-left">
+                  <div className="text-caption-1-regular text-foreground">
+                    Caption 1 Regular
+                    <div className="text-caption-2-regular text-muted-foreground mt-1">text-caption-1-regular</div>
+                  </div>
+                  <div className="text-caption-1-medium text-foreground">
+                    Caption 1 Medium
+                    <div className="text-caption-2-regular text-muted-foreground mt-1">text-caption-1-medium</div>
+                  </div>
+                  <div className="text-caption-1-bold text-foreground">
+                    Caption 1 Bold
+                    <div className="text-caption-2-regular text-muted-foreground mt-1">text-caption-1-bold</div>
+                  </div>
+                </div>
+              </ComponentExample>
+
+              <ComponentExample label="Caption 2 (11px)">
+                <div className="space-y-3 text-left">
+                  <div className="text-caption-2-regular text-foreground">
+                    Caption 2 Regular
+                    <div className="text-caption-2-regular text-muted-foreground mt-1">text-caption-2-regular</div>
+                  </div>
+                  <div className="text-caption-2-medium text-foreground">
+                    Caption 2 Medium
+                    <div className="text-caption-2-regular text-muted-foreground mt-1">text-caption-2-medium</div>
+                  </div>
+                  <div className="text-caption-2-bold text-foreground">
+                    Caption 2 Bold
+                    <div className="text-caption-2-regular text-muted-foreground mt-1">text-caption-2-bold</div>
                   </div>
                 </div>
               </ComponentExample>
